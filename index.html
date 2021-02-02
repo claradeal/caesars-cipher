@@ -2,15 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - FCC Project - Caesars Cipher - v2</title>
+  <title>Caesars Cipher</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<textarea type="text" id="myText" placeholder="Type message here." value=""></textarea>
+<textarea type="text" id="message" placeholder="Type message here." value=""></textarea>
 <button id="myBtn">Decipher</button>
-<div id="demo"></div>
+<div id="answer"></div>
 
 <script>
   var x = document.getElementById("myBtn");
@@ -18,13 +17,12 @@
 
   function targetMessage() {
     newStr = "";
-    codeStr = document.getElementById("myText").value;
+    codeStr = document.getElementById("message").value;
     let output = cipher(codeStr);
-    document.getElementById("demo").innerHTML = output;
+    document.getElementById("answer").innerHTML = output;
   }
 </script>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+<script  src="./script.js"></script>
 </body>
+
 </html>

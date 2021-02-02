@@ -23,7 +23,7 @@ function cipher(codeStr, shift) {
   return newStr;
 }
 
-// Code below is for running without a UI
+// Code below is for running without UI
 let output = cipher("SERR PBQR PNZC");
 console.log("The answer is " + output);
 console.log(
