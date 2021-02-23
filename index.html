@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale-1">
   <title>Caesars Cipher</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-<textarea type="text" id="message" placeholder="Type message here." value=""></textarea>
-<button id="myBtn">Decipher</button>
+<div class="content">
+<p>According to Wikipedia, <a href="https://en.wikipedia.org/wiki/Caesar_cipher">Caesars cipher</a> is one of the simplest and most widely known encryption techniques. How it works is that each letter is replaced by a letter some fixed number of positions down the alphabet.</p>
+<textarea type="text" id="message" placeholder="TYPE MESSAGE IN CAPITAL LETTERS HERE. For example, you could decipher: GUR DHVPX OEBJA SBK WHZCRQ BIRE GUR YNML QBT." value=""></textarea>
+<button id="myBtn">Decipher/Cipher</button>
 <div id="answer"></div>
+</div>
 
 <script>
   var x = document.getElementById("myBtn");
